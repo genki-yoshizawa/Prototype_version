@@ -151,22 +151,22 @@ public class BlockChoiceManager_Sc : MonoBehaviour
 
     private void BlockZoom()//名前キモイ
     {
-        if(choiceState == CHOICE_STATE.BLOCK)
-        {
-            curBlock.transform.position = curBlock.GetComponent<Block_Sc>().defaultPosition;
+        //if(choiceState == CHOICE_STATE.BLOCK)
+        //{
+        //    curBlock.transform.position = curBlock.GetComponent<Block_Sc>().defaultPosition;
 
-            marker.transform.position = curBlock.GetComponent<Block_Sc>().defaultPosition + new Vector3(0, 0, -0.5f);
-            marker.SetActive(true);
-        }
-        else if (choiceState == CHOICE_STATE.ROTATE)
-        {
-            curBlock.transform.position = curBlock.GetComponent<Block_Sc>().defaultPosition + new Vector3(0,0,-0.75f);
-            marker.SetActive(false);
-        }
-        else
-        {
-            curBlock.transform.position = curBlock.GetComponent<Block_Sc>().defaultPosition;
-        }
+        //    marker.transform.position = curBlock.GetComponent<Block_Sc>().defaultPosition + new Vector3(0, 0, -0.5f);
+        //    marker.SetActive(true);
+        //}
+        //else if (choiceState == CHOICE_STATE.ROTATE)
+        //{
+        //    curBlock.transform.position = curBlock.GetComponent<Block_Sc>().defaultPosition + new Vector3(0,0,-0.75f);
+        //    marker.SetActive(false);
+        //}
+        //else
+        //{
+        //    curBlock.transform.position = curBlock.GetComponent<Block_Sc>().defaultPosition;
+        //}
 
         return;
     }

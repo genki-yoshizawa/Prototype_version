@@ -17,8 +17,9 @@ public class Block_Sc : MonoBehaviour
     [SerializeField] private float curTime;
     [SerializeField] private bool nowRotate;
 
+    [SerializeField] private bool enableRotate = false;
 
-    [SerializeField] public Vector3 defaultPosition;
+    [SerializeField] private Vector3 defaultPosition;
 
     void Start()
     {
@@ -27,7 +28,15 @@ public class Block_Sc : MonoBehaviour
 
     void Update()
     {
-        UpdateKeyDownRotate();
+
+        if(enableRotate)
+        {
+            //if()
+
+            UpdateKeyDownRotate();
+        }
+
+       
     }
 
     public void OnKeyDownHorizonalRotate(int direction)
@@ -62,12 +71,25 @@ public class Block_Sc : MonoBehaviour
         curTime = Mathf.Clamp(curTime + Time.deltaTime, 0f, 0.5f);
         float rate = curTime / 0.5f;
         this.transform.rotation = Quaternion.Lerp(strRotation, endRotation, rate);
+        Debug.Log("回転中");
 
         if (rate >= 1f)
         {
             curTime = 0.0f;
             nowRotate = false;
         }
+    }
+
+    public void BlockDecision()
+    {
+        this.transform.position = defaultPosition + new Vector3(0, 0, -5f);
+
+        enableRotate = true;
+    }
+
+    public void BlockDefaultPosition()
+    {
+        this.transform.position = defaultPosition;
     }
 
 
@@ -99,5 +121,8 @@ public class Block_Sc : MonoBehaviour
         return DownBlock;
     }
 
-
+    //public GameObject GetThisBlock()
+    //{
+    //    return this.gameObject;
+    //}
 }

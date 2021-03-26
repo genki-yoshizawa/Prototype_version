@@ -14,6 +14,6 @@ public class RotateGimmick : MonoBehaviour
 
     void Update()
     {
-        this.gameObject.transform.Rotate(0.0f,0.0f,rot);
+        this.gameObject.transform.Rotate(0.0f, 0.0f, rot);
     }
 }

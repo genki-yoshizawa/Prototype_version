@@ -750,6 +750,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4306578924770496255, guid: 05062a1d13a69b94b85b254dab272e8e,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 4306578925177628719, guid: 05062a1d13a69b94b85b254dab272e8e,
         type: 3}
       propertyPath: m_Name
@@ -986,7 +991,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-140418
+  m_Name: pb_Mesh-7808
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

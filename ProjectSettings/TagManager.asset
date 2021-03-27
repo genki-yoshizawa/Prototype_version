@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Death
+  - Stage
+  - Ground
   layers:
   - Default
   - TransparentFX

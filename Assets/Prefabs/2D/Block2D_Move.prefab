@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 5086595824672993299}
   m_Layer: 0
   m_Name: Block2D_Move
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,3 +190,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rail01: {fileID: 0}
   rail02: {fileID: 0}
+  time: 0

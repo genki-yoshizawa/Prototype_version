@@ -69,6 +69,10 @@ public class PlayerController : MonoBehaviour
             if (!isGround)
                 isGround = true;
         }
+        if (other.gameObject.tag == "Death")
+        {
+            this.transform.position = StartPosition;
+        }
     }
     void OnTriggerExit(Collider other)
     {

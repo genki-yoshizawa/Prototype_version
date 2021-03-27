@@ -27,7 +27,7 @@ public class GimmicHummer : MonoBehaviour
         {
             rb.constraints = RigidbodyConstraints.FreezeAll;
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             rb.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
         }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4306578924770496225}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,8 +107,8 @@ GameObject:
   - component: {fileID: 4306578925177628753}
   - component: {fileID: 4306578925177628752}
   m_Layer: 0
-  m_Name: Parent2d
-  m_TagString: Untagged
+  m_Name: Block2D
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

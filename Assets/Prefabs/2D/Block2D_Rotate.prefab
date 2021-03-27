@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 8169333703279984994}
   - component: {fileID: 2817946993098931083}
   m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
+  m_Name: Block2D_Rotate
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
